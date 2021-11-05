@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.left-side {
+  padding: 1.5rem 0 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-link {
+  margin-right: 1.2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.nav-link a:hover {
+  color: black;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black;
+}
+
+.right-side {
+  padding: 1.5rem 2rem 0 0;
+}
+
+.right-side .brand {
+  font-size: 1.2rem;
+}
+
+.portfolio-items-boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-box {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 320px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 100px 0 100px;
+}
+
+.logo img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-weight: 600;
+  color: transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.img-text:hover .subtitle {
+  color: lightsalmon;
+  font-weight: 600;
+}
+
+.portfolio-img-darken {
+  -webkit-filter: brightness(10%);
+          filter: brightness(10%);
+}
+/*# sourceMappingURL=style.css.map */
